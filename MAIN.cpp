@@ -1,22 +1,22 @@
-// its my first try on cpp, will u can be kindly with me?
+
 #include <iostream>
 using namespace std;
 template < int row, int col>
-void init_array(const int x,const int y, int (&bullshit)[row][col] ,int z){
+void init_array(const int x,const int y, int (&bull)[row][col] ,int z){
 	
 	for(int i = 0;i < x;i++){
 		for(int f = 0;f < y;f++){
-			bullshit[i][f] = z;
+			bull[i][f] = z;
 		}
 		
 }
 }
 template < int row, int col>
-void print_array(int x, int y, int (&bullshit)[row][col]){
+void print_array(int x, int y, int (&bull)[row][col]){
 	
 	for(int i = 0;i < x;i++){
 		for(int f = 0;f < y;f++){
-			cout << bullshit[i][f];
+			cout << bull[i][f];
 			
 		}
 		cout << endl;
@@ -59,7 +59,7 @@ while(bar<10){
 }
 cout << endl;
 	
-	//third array, maybe use switch?
+	//third array
 
 int c[10];
 int cpp = 0;
@@ -85,13 +85,13 @@ while(cpp<10){
 }
 cout << endl;
 cout << endl;
-	//Second Part, is it pointer?
+	//Second Part
 	
-int boolshit[10][10];
-init_array(10,10,boolshit, 0);
-print_array(10,10,boolshit)	;
-init_array(10,10,boolshit, 1);
-print_array(10,10,boolshit)	;
+int bool[10][10];
+init_array(10,10,bool, 0);
+print_array(10,10,bool)	;
+init_array(10,10,bool, 1);
+print_array(10,10,bool)	;
 
 
 return 0;	
